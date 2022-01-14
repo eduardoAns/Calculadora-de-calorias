@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora de calorias</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2 class="text-center my-5 titulo">Calculadora de calorias</h2>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-cita">
+                <form id="nuevo-calculo">
+                    <legend class="mb-4">Datos</legend>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Peso (Kg):</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="number" id="peso" name="peso" class="form-control" placeholder="Peso">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Altura(Cm):</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="number" id="altura" name="altura" class="form-control"  placeholder="Altura">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Edad:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="number" id="edad" name="edad" class="form-control"  placeholder="Edad">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Actividad:</label>
+                        <select class="col-sm-8 col-lg-8 form-control" id="actividad" name = "actividad">
+                            <option value="">- Seleccionar -</option>
+                            <option value="1.2">Sedentario</option>
+                            <option value="1.375">Poca Actividad</option>
+                            <option value="1.55">Actividad moderada</option>
+                            <option value="1.725">Actividad intensa</option>
+                            <option value="1.9">Profesional</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                            <button type="submit" class="btn btn-success w-100 d-block">Calcular Calorias</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2 id="administra" class="mb-4">Resultado</h2>
+                <div id="resultadoCalorias" class="resultadoCalorias"></div>
+            </div>
+        </div> <!--.row-->
+    </div><!--.container-->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
